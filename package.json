@@ -1,11 +1,26 @@
 {
   "name": "myhub_mystock",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "src/home.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "refreshVSToken": "vsts-npm-auth -config .npmrc",
+    "build": "tsc"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.11",
+    "react": "^16.12.0"
+  }
 }
